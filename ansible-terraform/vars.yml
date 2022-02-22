@@ -1,0 +1,7 @@
+aws_access_key1 <some-value>
+aws_secret_key1 <some-value>
+aws_ec2_region1 <some-value>
+
+aws_access_key2 <some-value>
+aws_secret_key2 <some-value>
+aws_ec2_region2 <some-value>

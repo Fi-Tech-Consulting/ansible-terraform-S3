@@ -1,0 +1,15 @@
+- name: PUT/upload with custom headers for user 1
+  amazon.aws.aws_s3:
+    bucket: <unique-bucket_name> #mybucket
+    object: /my/desired/key.txt #key/file path
+    src: /usr/local/myfile.txt #file to be uploaded into S3 bucket
+    mode: put
+    headers: 'x-amz-grant-full-control=emailAddress=owner@example.com'
+
+- name: PUT/upload with custom headers for user 2
+  amazon.aws.aws_s3:
+    bucket: <unique-bucket_name> #mybucket
+    object: /my/desired/key.txt #key/file path
+    src: /usr/local/myfile.txt #file to be uploaded into S3 bucket
+    mode: put
+    headers: 'x-amz-grant-full-control=emailAddress=owner@example.com'
